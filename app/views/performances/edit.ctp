@@ -1,3 +1,13 @@
+<div data-role="page">
+<div data-role="header">
+<a href="" style="margin-top:5px;" data-rel="back" data-direction="reverse" data-icon="back" data-iconpos="notext"></a>
+<h2>お気に入りライブ</h2>
+</div>
+<div data-role="content">
+作業中
+</div>
+</div>
+<!--
 <div class="performances form">
 <?php echo $this->Form->create('Performance');?>
 	<fieldset>
@@ -29,4 +39,4 @@
 		<li><?php echo $this->Html->link(__('List Movies', true), array('controller' => 'movies', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Movie', true), array('controller' => 'movies', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div>-->

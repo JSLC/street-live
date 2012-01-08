@@ -1,3 +1,15 @@
+<div data-role="page">
+<div data-role="header">
+<a href="" style="margin-top:5px;" data-rel="back" data-direction="reverse" data-icon="back" data-iconpos="notext"></a>
+<h2>紹介文編集</h2>
+</div>
+<div data-role="content">
+作業中
+</div>
+</div>
+
+
+<!--
 <div class="performers form">
 <?php echo $this->Form->create('Performer');?>
 	<fieldset>
@@ -27,3 +39,4 @@
 		<li><?php echo $this->Html->link(__('New Member', true), array('controller' => 'members', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
+-->

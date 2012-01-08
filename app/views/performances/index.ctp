@@ -1,3 +1,30 @@
+<div data-role='page'  data-theme='b'>
+	<div data-role="header">
+	<a data-icon="refresh" href="Performances/index/booking/" data-transition="flip">更新</a>
+	<h1>ライブ日程</h1>
+	</div>
+	<div data-role="content">
+		<div class="content-primary">	
+		<ul data-role="listview" data-theme="c">
+		<?php foreach ($performances as $performance):?>
+		<li><a href="/Performances/view/<?php echo  $performance['Performance']['id'] ?>">
+				<img src="/img/<?php echo  $performance['Performance']['thumbnail']?>" />
+				<h3><?php echo $performance['Performance']['title'] ?></h3>
+				<p>開催日:<?php echo  date('Y年m月d日 H時i分',strtotime($performance['Performance']['holdingdate'])); ?></p>
+			</a>
+		</li>
+		<?php endforeach; ?>
+		</ul>
+		</div>
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+<?php
+?>
+
+
+<!--
 <div class="performances index">
 	<h2><?php __('Performances');?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -72,4 +99,4 @@
 		<li><?php echo $this->Html->link(__('List Movies', true), array('controller' => 'movies', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Movie', true), array('controller' => 'movies', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div>-->

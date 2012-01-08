@@ -12,9 +12,9 @@ class DATABASE_CONFIG {
 	var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
-		'host' => '127.0.0.1:3306',
-		'login' => 'root',
-		'password' => '',
+		'host' => 'localhost',
+		'login' => 'jslc',
+		'password' => 'Jslc2011',
 		'database' => 'slive',
 		'encoding' => 'utf8'
 	);

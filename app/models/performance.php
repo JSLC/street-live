@@ -2,6 +2,11 @@
 class Performance extends AppModel {
 	var $name = 'Performance';
 	var $validate = array(
+		'stage' => array(
+				'notempty'=>array(
+					'rule'=>array('notempty'),
+			)
+		),
 		'title' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -53,6 +58,7 @@ class Performance extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+/*
 		'Stage' => array(
 			'className' => 'Stage',
 			'foreignKey' => 'stage_id',
@@ -60,6 +66,7 @@ class Performance extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+*/
 		'Performancetype' => array(
 			'className' => 'Performancetype',
 			'foreignKey' => 'performancetype_id',

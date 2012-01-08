@@ -1,0 +1,12 @@
+.bigSizeFont{
+	font-size:1.2em;
+	font-weight:bolder;
+}
+.error-message{
+
+	color:red;
+}
+h2{
+	margin:0;
+	padding:0;
+}

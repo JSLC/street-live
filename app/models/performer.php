@@ -58,10 +58,15 @@ class Performer extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		),
+		'Member'=>array(
+			'className'=>'Member',
+			'foreignKey'=>'performer_id',
+			'dependent'=>false
 		)
 	);
 
-
+	/*
 	var $hasAndBelongsToMany = array(
 		'Member' => array(
 			'className' => 'Member',
@@ -79,5 +84,5 @@ class Performer extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-
+	*/
 }
